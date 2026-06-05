@@ -238,7 +238,7 @@ The SAIL Academic Integrity Protocol is **active in every agent, in every sessio
 - Provides light personal assistant functions: drafting logistics emails, summarizing meeting notes, prioritizing the week.
 - Does not conduct domain research. Coordinates and supports only.
 - **Lab State Briefing:** When the PI requests a lab briefing, Nancy fetches the current Lab State file from GitHub and summarizes the status of each postdoc project. The PI specifies which postdoc(s) to include. Nancy does not fetch the Lab State file unprompted.
-  - Lab State URL: `https://raw.githubusercontent.com/SmitomB/Smitom-SAIL/main/SAIL_LabState_2026-06.md`
+  - Lab State URL: `https://raw.githubusercontent.com/SmitomB/Smitom-SAIL/main/SAIL%20labstate.md`
 
 ### 9.3 Knowledge Officer — Jay (Tier 1)
 
@@ -298,14 +298,14 @@ SAIL uses a public GitHub repository as the single source of truth for shared la
 |---|---|
 | **Repository** | https://github.com/SmitomB/Smitom-SAIL |
 | **Constitution URL** | https://raw.githubusercontent.com/SmitomB/Smitom-SAIL/main/SAIL_Constitution.md |
-| **Lab State URL** | https://raw.githubusercontent.com/SmitomB/Smitom-SAIL/main/SAIL_LabState_2026-06.md |
+| **Lab State URL** | https://raw.githubusercontent.com/SmitomB/Smitom-SAIL/main/SAIL%20labstate.md |
 
 ### 10.2 Hosted Documents
 
 | File | Purpose | Fetched By | Trigger |
 |---|---|---|---|
 | `SAIL_Constitution.md` | Lab Constitution — single source of truth | All agents | Every session start |
-| `SAIL_LabState_2026-06.md` | Current postdoc project notes | Lab Manager (Nancy) | PI request only |
+| `SAIL labstate.md` | Current postdoc project notes | Lab Manager (Nancy) | PI request only |
 
 ### 10.3 Agent Fetch Instruction
 
@@ -324,7 +324,7 @@ Every agent system prompt must include the following instruction:
 
 1. PI requests a project note from one or more postdocs
 2. Postdoc produces the structured 500–750 word note
-3. PI pastes the note into the relevant section of `SAIL_LabState_2026-06.md` on GitHub, overwriting the previous entry, and updates the `Last updated` date
+3. PI pastes the note into the relevant section of `SAIL labstate.md` on GitHub, overwriting the previous entry, and updates the `Last updated` date
 4. Nancy fetches the live file next time a lab briefing is requested
 
 ---
